@@ -54,20 +54,20 @@ authoritative RDAP lookup — alongside live progress, a running hit count, and 
 
 <table>
 <tr>
-<td width="50%"><strong>Wordlist</strong> — real words from a list; glue two lists for <code>word + word</code> brandables.<br><img src="docs/screenshots/scan-type-wordlist.png" alt="Wordlist scan"></td>
-<td width="50%"><strong>Add-on</strong> — wrap every word with a fixed prefix and/or suffix.<br><img src="docs/screenshots/scan-type-addon.png" alt="Add-on scan"></td>
+<td width="50%" align="center"><img src="docs/screenshots/scan-type-wordlist.png" alt="Wordlist scan"><br><sub><strong>Wordlist</strong> — real words from a list; glue two lists for <code>word + word</code> brandables.</sub></td>
+<td width="50%" align="center"><img src="docs/screenshots/scan-type-addon.png" alt="Add-on scan"><br><sub><strong>Add-on</strong> — wrap every word with a fixed prefix and/or suffix.</sub></td>
 </tr>
 <tr>
-<td width="50%"><strong>Letters</strong> — every possible combination from a character set, no wordlist needed.<br><img src="docs/screenshots/scan-type-letters.png" alt="Letters scan"></td>
-<td width="50%"><strong>Numbers</strong> — count through a range, wrapped in optional fixed text.<br><img src="docs/screenshots/scan-type-numbers.png" alt="Numbers scan"></td>
+<td width="50%" align="center"><img src="docs/screenshots/scan-type-letters.png" alt="Letters scan"><br><sub><strong>Letters</strong> — every possible combination from a character set, no wordlist needed.</sub></td>
+<td width="50%" align="center"><img src="docs/screenshots/scan-type-numbers.png" alt="Numbers scan"><br><sub><strong>Numbers</strong> — count through a range, wrapped in optional fixed text.</sub></td>
 </tr>
 <tr>
-<td width="50%"><strong>TLD Swap</strong> — re-try names you couldn't get across a new set of TLDs.<br><img src="docs/screenshots/scan-type-tldswap.png" alt="TLD Swap scan"></td>
-<td width="50%"><strong>Phonetic</strong> — names that <em>sound like</em> your base word (Soundex).<br><img src="docs/screenshots/scan-type-phonetic.png" alt="Phonetic scan"></td>
+<td width="50%" align="center"><img src="docs/screenshots/scan-type-tldswap.png" alt="TLD Swap scan"><br><sub><strong>TLD Swap</strong> — re-try names you couldn't get across a new set of TLDs.</sub></td>
+<td width="50%" align="center"><img src="docs/screenshots/scan-type-phonetic.png" alt="Phonetic scan"><br><sub><strong>Phonetic</strong> — names that <em>sound like</em> your base word (Soundex).</sub></td>
 </tr>
 <tr>
-<td width="50%"><strong>Domain Hack</strong> — spell a word across the dot, using the TLD as the last letters (<code>stud.io</code>).<br><img src="docs/screenshots/scan-type-domainhack.png" alt="Domain Hack scan"></td>
-<td width="50%"><strong>Leet</strong> — look-alike digit and symbol swaps (<code>cyb3r</code>, <code>st4r</code>).<br><img src="docs/screenshots/scan-type-leet.png" alt="Leet scan"></td>
+<td width="50%" align="center"><img src="docs/screenshots/scan-type-domainhack.png" alt="Domain Hack scan"><br><sub><strong>Domain Hack</strong> — spell a word across the dot, using the TLD as the last letters (<code>stud.io</code>).</sub></td>
+<td width="50%" align="center"><img src="docs/screenshots/scan-type-leet.png" alt="Leet scan"><br><sub><strong>Leet</strong> — look-alike digit and symbol swaps (<code>cyb3r</code>, <code>st4r</code>).</sub></td>
 </tr>
 </table>
 
