@@ -25,9 +25,7 @@ ones rise to the top.
 ## Features
 
 - **Instant check** — one name across 35 TLDs in a keystroke.
-- **Bulk scans, eight ways** — Wordlist, Add-on (prefix/suffix), Letters, Numbers, TLD
-  Swap, Phonetic, Domain Hack, and Leet. Glue two wordlists together for `word + word`
-  brandables.
+- **Bulk scans, eight ways** — see below.
 - **39 built-in wordlists** — Nouns, Verbs, Adjectives, Animals, Colors, Gemstones,
   Astronomy, Brand Morphemes and more — plus upload your own.
 - **Authoritative availability** — every check goes to the official IANA RDAP registry, so
@@ -38,20 +36,50 @@ ones rise to the top.
   domain frees up; and track buys and sells in a portfolio.
 - **Pay-as-you-go** — $5 = 10,000 lookups. No subscription, no card to start.
 
-## A look inside
+## The scanner
 
-### Configure a scan
-Eight scan types, a target-TLD picker, and a live credit estimate before you commit.
+Pick a strategy, point it at a wordlist, choose your target TLDs, and see a live credit
+estimate before you commit.
 
-![Configure a scan](docs/screenshots/scan.png)
+![The scanner](docs/screenshots/scan.png)
 
-### Work the results
+### Eight ways to generate names
+
+<table>
+<tr>
+<td width="50%"><strong>Wordlist</strong> — real words from a list; glue two lists for <code>word + word</code> brandables.<br><img src="docs/screenshots/scan-type-wordlist.png" alt="Wordlist scan"></td>
+<td width="50%"><strong>Add-on</strong> — wrap every word with a fixed prefix and/or suffix.<br><img src="docs/screenshots/scan-type-addon.png" alt="Add-on scan"></td>
+</tr>
+<tr>
+<td width="50%"><strong>Letters</strong> — every possible combination from a character set, no wordlist needed.<br><img src="docs/screenshots/scan-type-letters.png" alt="Letters scan"></td>
+<td width="50%"><strong>Numbers</strong> — count through a range, wrapped in optional fixed text.<br><img src="docs/screenshots/scan-type-numbers.png" alt="Numbers scan"></td>
+</tr>
+<tr>
+<td width="50%"><strong>TLD Swap</strong> — re-try names you couldn't get across a new set of TLDs.<br><img src="docs/screenshots/scan-type-tldswap.png" alt="TLD Swap scan"></td>
+<td width="50%"><strong>Phonetic</strong> — names that <em>sound like</em> your base word (Soundex).<br><img src="docs/screenshots/scan-type-phonetic.png" alt="Phonetic scan"></td>
+</tr>
+<tr>
+<td width="50%"><strong>Domain Hack</strong> — spell a word across the dot, using the TLD as the last letters (<code>stud.io</code>).<br><img src="docs/screenshots/scan-type-domainhack.png" alt="Domain Hack scan"></td>
+<td width="50%"><strong>Leet</strong> — look-alike digit and symbol swaps (<code>cyb3r</code>, <code>st4r</code>).<br><img src="docs/screenshots/scan-type-leet.png" alt="Leet scan"></td>
+</tr>
+</table>
+
+### 35 TLDs, one picker
+
+Three quick chips for the common endings, and a searchable popover for the full set —
+from `.com` and `.io` to `.ai`, `.dev`, `.studio` and more.
+
+![TLD picker](docs/screenshots/scan-tlds.png)
+
+## Working the results
+
 Every candidate, scored and priced — filter by length, TLD, score or scan, then export or
 re-check in bulk.
 
 ![Results](docs/screenshots/results.png)
 
-### Wordlists
+## Wordlists
+
 39 curated system lists to scan against, plus your own uploads.
 
 ![Wordlists](docs/screenshots/wordlists.png)
