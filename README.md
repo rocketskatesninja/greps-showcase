@@ -43,6 +43,13 @@ estimate before you commit.
 
 ![The scanner](docs/screenshots/scan.png)
 
+### Watch it run
+
+Launch a scan and every candidate streams past in real time — a fast DNS pre-check, then an
+authoritative RDAP lookup — alongside live progress, a running hit count, and credits spent.
+
+![The scanner in action](docs/screenshots/scan-live.png)
+
 ### Eight ways to generate names
 
 <table>
