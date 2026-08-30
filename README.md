@@ -7,6 +7,15 @@ Check a single name across 35 TLDs instantly, or sweep thousands of candidates a
 against the official IANA RDAP registry. Pay-as-you-go, no subscription.
 </p>
 
+<p align="center">
+<a href="https://greps.net"><img alt="Live" src="https://img.shields.io/badge/live-greps.net-2ea44f?style=flat-square"></a>
+<img alt="Laravel" src="https://img.shields.io/badge/Laravel-FF2D20?style=flat-square&logo=laravel&logoColor=white">
+<img alt="React" src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black">
+<img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white">
+<img alt="Inertia.js" src="https://img.shields.io/badge/Inertia.js-9553E9?style=flat-square&logo=inertia&logoColor=white">
+<img alt="RDAP" src="https://img.shields.io/badge/RDAP-authoritative-0b7285?style=flat-square">
+</p>
+
 ![greps.net](docs/screenshots/landing.png)
 
 > **This is a public showcase of the project.** It's here to show what greps.net does — the
@@ -90,6 +99,23 @@ re-check in bulk.
 39 curated system lists to scan against, plus your own uploads.
 
 ![Wordlists](docs/screenshots/wordlists.png)
+
+## Engineering highlights
+
+- **RDAP-first correctness** — every verdict comes from the registries' own authoritative
+  protocol, not scraped WHOIS, including registry-specific quirks (e.g. some ccTLD
+  registries return an ambiguous 404 for both "reserved" and "available" — resolved by
+  reading the response body, not just the status code).
+- **Concurrency-safe billing** — every credit debit runs through a single row-locked,
+  idempotent ledger. A batch of verifications takes the lock once, charges only definitive
+  available/registered verdicts, and mathematically cannot take a balance negative or
+  double-charge a retried request.
+- **Real-time without a queue-per-request** — a client-driven pipeline (browser-side DNS
+  pre-check → server-side RDAP verification → polled drain) paced by a token bucket tuned
+  to measured verify throughput, so the live terminal streams smoothly whether the scan is
+  a hundred candidates or a hundred thousand.
+- **Built at real scale** — production inventory in the hundreds of thousands of verified
+  domains, checked across dozens of curated wordlists and all 35 supported TLDs.
 
 ## Built with
 
